@@ -6,7 +6,7 @@ export const MapView = () => {
 
 	useEffect(() => {
 		if (mapRef.current) {
-			initMap(mapRef.current, [-100.31019063199852, 25.66901932031443]);
+			initMap(mapRef.current, [13.3777,52.5163]);
 		}
 	}, []);
 

@@ -4,10 +4,11 @@ export const initMap = (container: HTMLDivElement, coords: [number, number]) => 
 
 	return new Map({
 		container,
-        style: 'mapbox://styles/mapbox/dark-v10',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        // style: 'mapbox://styles/mapbox/satellite-v9',
         pitchWithRotate: false,
         center: coords,
-        zoom: 15,
+        zoom: 10,
         accessToken: import.meta.env.VITE_ACCESS_TOKEN as string,
         doubleClickZoom: false
 	});
